@@ -1,0 +1,92 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+:root {
+  --font-fredoka: "Fredoka", "Arial", sans-serif;
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", "Arial", sans-serif;
+  --font-heading: var(--font-fredoka);
+  --font-body: var(--font-plus-jakarta-sans);
+  --font-aktiv: var(--font-body);
+  --main-nav-h: 122px;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --main-nav-h: 64px;
+  }
+}
+
+@theme {
+  --font-sans: var(--font-body);
+  --font-fredoka: var(--font-heading);
+  --font-plus-jakarta-sans: var(--font-body);
+  --font-aktiv: var(--font-body);
+
+  --color-primary: #fba605;
+  --color-secondary: #e00e77;
+  --color-tertiary: #ba1965;
+  --color-accent: #ff5822;
+
+  --color-ink: #241c12;
+  --color-ink-soft: #5a4c3a;
+
+  --color-paper: #fffdf8;
+  --color-paper-soft: #fbf5e9;
+
+  --transition-property-height: height;
+  --transition-property-spacing: margin, padding;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-300, currentColor);
+  }
+
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  button:disabled,
+  [role="button"]:disabled {
+    cursor: default;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  /* background: var(--color-paper); */
+  background: white;
+  color: var(--color-ink-soft);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+  }
+}
+
+@utility px-responsive {
+  @apply px-4 sm:px-8 xl:px-[6%];
+}
+
+@utility ui-container {
+  @apply max-w-[1920px] mx-auto px-responsive;
+}
+
+@utility mt-responsive {
+  @apply mt-14 md:mt-16 lg:mt-18;
+}
+
+@utility mb-responsive {
+  @apply mb-14 md:mb-16 lg:mb-18;
+}

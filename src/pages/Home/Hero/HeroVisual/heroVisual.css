@@ -1,0 +1,31 @@
+@keyframes rocketFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(14px) rotate(-2deg);
+  }
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+.rocket-float {
+  animation: rocketFloat 4.2s ease-in-out infinite;
+}
+
+.dot-pulse {
+  animation: dotPulse 3s ease-in-out infinite;
+}
