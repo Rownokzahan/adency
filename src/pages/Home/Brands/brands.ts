@@ -37,6 +37,10 @@ interface Brand {
 
 export const brands: Brand[] = [
   {
+    image: kfc,
+    alt: "KFC",
+  },
+  {
     image: sevenUp,
     alt: "7 Up",
   },
@@ -52,10 +56,7 @@ export const brands: Brand[] = [
     image: arabikaCoffee,
     alt: "Arabika Coffee",
   },
-  {
-    image: bengal,
-    alt: "Bengal",
-  },
+
   {
     image: chase,
     alt: "Chase",
@@ -79,6 +80,10 @@ export const brands: Brand[] = [
   {
     image: danCake,
     alt: "Dan Cake",
+  },
+  {
+    image: radhuni,
+    alt: "Radhuni",
   },
   {
     image: daraz,
@@ -112,10 +117,7 @@ export const brands: Brand[] = [
     image: kazifarmsKitchen,
     alt: "Kazifarms Kitchen",
   },
-  {
-    image: kfc,
-    alt: "KFC",
-  },
+
   {
     image: lumina,
     alt: "Lumina",
@@ -132,9 +134,10 @@ export const brands: Brand[] = [
     image: pranPotata,
     alt: "Pran Potato",
   },
+
   {
-    image: radhuni,
-    alt: "Radhuni",
+    image: wellness,
+    alt: "Wellness",
   },
   {
     image: ruchi,
@@ -156,8 +159,9 @@ export const brands: Brand[] = [
     image: utshob,
     alt: "Utshob",
   },
+
   {
-    image: wellness,
-    alt: "Wellness",
+    image: bengal,
+    alt: "Bengal",
   },
 ];
