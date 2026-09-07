@@ -6,7 +6,7 @@ const contactDetails = [
     label: "Our Office",
     value: (
       <>
-        AB Tower 131/2/GA (6th Floor), Middle Badda, Progati Sharani, Opposite
+        AB Tower 131/2/GA (4th Floor), Middle Badda, Progati Sharani, Opposite
         PRAN-RFL CENTRE, Above DESH FURNITURE, Dhaka, 1212
       </>
     ),
