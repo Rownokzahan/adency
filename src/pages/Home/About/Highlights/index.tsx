@@ -13,7 +13,7 @@ const Highlights = () => {
           </span>
 
           <div>
-            <h4 className="mb-3 max-w-lg text-2xl sm:text-3xl font-semibold leading-tight text-paper">
+            <h4 className="mb-3 max-w-lg text-2xl xl:text-3xl font-semibold leading-tight text-paper">
               {title}
             </h4>
 

@@ -4,7 +4,7 @@ import Highlights from "./Highlights";
 const About = () => {
   return (
     <section id="about-section" className="bg-ink">
-      <div className="ui-container py-12 sm:py-16 lg:py-20 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+      <div className="ui-container py-12 sm:py-16 lg:py-20 grid gap-10 lg:grid-cols-[0.8fr_1fr] xl:grid-cols-[0.8fr_1fr] lg:gap-20">
         <div className="flex flex-col gap-8">
           <div>
             <div className="mb-5 flex items-center gap-3">
@@ -19,7 +19,13 @@ const About = () => {
             </h2>
           </div>
 
-          <img src={AboutImage} alt="" className="lg:h-100 rounded-lg" />
+          <div className="flex-1 min-h-0 overflow-hidden">
+            <img
+              src={AboutImage}
+              alt=""
+              className="size-full rounded-lg object-cover object-left"
+            />
+          </div>
         </div>
 
         <Highlights />
