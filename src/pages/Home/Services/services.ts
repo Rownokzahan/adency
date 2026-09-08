@@ -27,7 +27,7 @@ export const services: ServiceType[] = [
     Icon: FiShare2,
   },
   {
-    title: "DESIGN",
+    title: "Branding",
     description:
       "Our creative team harmonizes visual and experiential elements, refining your brand for exceptional user experiences.",
     Icon: FiPenTool,

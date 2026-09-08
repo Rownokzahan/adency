@@ -15,7 +15,7 @@ const Service = ({ service }: ServiceProps) => {
       <Icon size={36} className="text-primary" />
 
       <div className="flex flex-col gap-3 text-center">
-        <h3 className="text-lg font-semibold text-paper">{title}</h3>
+        <h3 className="text-lg font-semibold text-paper uppercase">{title}</h3>
         <p className="text-sm leading-6 text-paper/60 text-pretty">
           {description}
         </p>
