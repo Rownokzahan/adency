@@ -2,7 +2,7 @@ import GalleryImages from "./GalleryImages";
 
 const LifeAtAdency = () => {
   return (
-    <section className="ui-container my-20">
+    <section className="ui-container my-responsive">
       <div className="mb-8">
         <div className="mb-3 flex items-center gap-3">
           <span className="size-2 rounded-full bg-primary" />

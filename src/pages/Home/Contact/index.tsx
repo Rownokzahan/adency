@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 
 const Contact = () => {
   return (
-    <section id="contact-section" className="lg:ui-container lg:mb-20">
+    <section id="contact-section" className="lg:ui-container lg:my-responsive">
       <div className="px-responsive py-20 lg:px-12 lg:rounded-3xl bg-ink grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-16">
         <div className="h-full flex flex-col">
           <div className="mb-8 space-y-3">

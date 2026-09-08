@@ -20,7 +20,7 @@ const Brands = () => {
   );
 
   return (
-    <section className="py-20">
+    <section className="my-responsive">
       <div className="ui-container mb-8">
         <div className="mb-3 flex items-center gap-3">
           <span className="size-2 rounded-full bg-primary" />
