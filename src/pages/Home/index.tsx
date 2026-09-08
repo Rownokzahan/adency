@@ -1,28 +1,29 @@
 import About from "./About";
-import Branding from "./Branding";
 import Brands from "./Brands";
-import Campains from "./Campains";
 import Contact from "./Contact";
 import Hero from "./Hero";
-import MotionGraphics from "./MotionGraphics";
+import LifeAtAdency from "./LifeAtAdency";
 import OVC from "./OVC";
 import Photography from "./Photography";
 import PrintPackaging from "./PrintPackaging";
 import Reels from "./Reels";
+import Services from "./Services";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <Branding />
+      {/* <Branding /> */}
+      <Services />
       <Photography />
-      <MotionGraphics />
+      {/* <MotionGraphics /> */}
       <Reels />
       <PrintPackaging />
       <OVC />
-      <Campains />
+      {/* <Campains /> */}
 
       <About />
+      <LifeAtAdency />
       <Brands />
       <Contact />
     </>
