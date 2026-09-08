@@ -2,6 +2,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import CarouselArrowButtons from "../../../components/ui/CarouselArrowButtons";
 import { printPackagingImages } from "./printPackagingImages";
+import SectionEyebrow from "../../../components/ui/SectionEyebrow";
 
 const PrintPackaging = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -23,13 +24,7 @@ const PrintPackaging = () => {
   return (
     <section className="my-responsive">
       <div className="ui-container mb-8">
-        <div className="mb-3 flex items-center justify-center gap-3">
-          <span className="size-2 rounded-full bg-primary" />
-
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-soft">
-            A Few Highlights
-          </p>
-        </div>
+        <SectionEyebrow label="Selected Projects" isInCenter={true} />
 
         <h3 className="text-center text-3xl font-semibold sm:text-5xl">
           Print and Packaging

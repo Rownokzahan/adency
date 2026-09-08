@@ -3,6 +3,7 @@ import CarouselArrowButtons from "../../../components/ui/CarouselArrowButtons";
 
 import Reel from "./Reel";
 import { reels } from "./reels";
+import SectionEyebrow from "../../../components/ui/SectionEyebrow";
 
 const Reels = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -13,13 +14,7 @@ const Reels = () => {
   return (
     <section className="my-responsive">
       <div className="ui-container mb-8">
-        <div className="mb-3 flex items-center justify-center gap-3">
-          <span className="size-2 rounded-full bg-primary" />
-
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink-soft">
-            In the Moment
-          </p>
-        </div>
+        <SectionEyebrow label="In the Moment" isInCenter={true} />
 
         <h3 className="text-center text-4xl font-semibold sm:text-6xl">
           Reels

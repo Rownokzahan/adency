@@ -1,3 +1,4 @@
+import SectionEyebrow from "../../../components/ui/SectionEyebrow";
 import AdencyMap from "./AdencyMap";
 import ContactDetails from "./ContactDetails";
 import SocialLinks from "./SocialLinks";
@@ -7,14 +8,8 @@ const Contact = () => {
     <section id="contact-section" className="lg:ui-container lg:my-responsive">
       <div className="px-responsive py-20 lg:px-12 lg:rounded-3xl bg-ink grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-16">
         <div className="h-full flex flex-col">
-          <div className="mb-8 space-y-3">
-            <div className="flex items-center gap-3">
-              <span className="size-2 rounded-full bg-primary" />
-
-              <p className="text-xs uppercase tracking-[0.24em] text-paper/60">
-                Get in Touch
-              </p>
-            </div>
+          <div className="mb-8">
+            <SectionEyebrow label="Get in Touch" color="light" />
 
             <h3 className="text-4xl font-semibold sm:text-5xl text-paper">
               Connect with us
