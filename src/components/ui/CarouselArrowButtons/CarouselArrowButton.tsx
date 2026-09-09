@@ -21,8 +21,8 @@ const CarouselArrowButton = ({
   return (
     <button
       className={clsx(
-        "size-12 rounded-full shadow-sm",
-        "bg-black/90 text-paper grid place-items-center",
+        "size-9.5 sm:size-12 rounded-full shadow-sm",
+        "bg-black/80 text-paper grid place-items-center",
         "absolute z-10 top-1/2 -translate-y-1/2",
         {
           "left-2": position === "prev",
