@@ -1,7 +1,7 @@
 import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import { photographyImages } from "./photographyImages";
-import SectionEyebrow from "../../../components/ui/SectionEyebrow";
+import SectionHeading from "../../../components/ui/SectionHeading";
 
 const Photography = () => {
   const [emblaRef] = useEmblaCarousel(
@@ -22,13 +22,13 @@ const Photography = () => {
 
   return (
     <section id="photography-section" className="my-responsive">
-      <div className="ui-container mb-8">
-        <SectionEyebrow label="Through the Lens" isInCenter={true} />
-
-        <h3 className="text-4xl font-semibold sm:text-5xl text-center">
-          Photography
-        </h3>
-      </div>
+      <SectionHeading
+        className="ui-container"
+        eyebrow="Through the Lens"
+        isInCenter
+      >
+        Photography
+      </SectionHeading>
 
       <div
         ref={emblaRef}

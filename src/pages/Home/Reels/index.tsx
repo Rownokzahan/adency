@@ -3,7 +3,7 @@ import CarouselArrowButtons from "../../../components/ui/CarouselArrowButtons";
 
 import Reel from "./Reel";
 import { reels } from "./reels";
-import SectionEyebrow from "../../../components/ui/SectionEyebrow";
+import SectionHeading from "../../../components/ui/SectionHeading";
 
 const Reels = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -13,13 +13,13 @@ const Reels = () => {
 
   return (
     <section className="my-responsive">
-      <div className="ui-container mb-8">
-        <SectionEyebrow label="In the Moment" isInCenter={true} />
-
-        <h3 className="text-center text-4xl font-semibold sm:text-6xl">
-          Reels
-        </h3>
-      </div>
+      <SectionHeading
+        className="ui-container"
+        eyebrow="In the Moment"
+        isInCenter
+      >
+        Reels
+      </SectionHeading>
 
       <div className="relative">
         <div ref={emblaRef} className="overflow-hidden">

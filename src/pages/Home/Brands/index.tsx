@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { brands } from "./brands";
 import CarouselDots from "../../../components/ui/CarouselDots";
-import SectionEyebrow from "../../../components/ui/SectionEyebrow";
+import SectionHeading from "../../../components/ui/SectionHeading";
 
 const BRANDS_PER_SLIDE = 12;
 
@@ -22,13 +22,9 @@ const Brands = () => {
 
   return (
     <section className="my-responsive">
-      <div className="ui-container mb-8">
-        <SectionEyebrow label="Trusted by Businesses" />
-
-        <h3 className="text-3xl font-semibold sm:text-5xl capitalize">
-          Brands We’ve Helped Grow
-        </h3>
-      </div>
+      <SectionHeading className="ui-container" eyebrow="Trusted by Businesses">
+        Brands We’ve Helped Grow
+      </SectionHeading>
 
       <div className="sm:ui-container">
         <div

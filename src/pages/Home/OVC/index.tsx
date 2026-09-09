@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import CarouselArrowButtons from "../../../components/ui/CarouselArrowButtons";
-import SectionEyebrow from "../../../components/ui/SectionEyebrow";
 import { getEmbedUrl, ovcVideos } from "./ovcVideos";
+import SectionHeading from "../../../components/ui/SectionHeading";
 
 const OVC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -11,11 +11,13 @@ const OVC = () => {
 
   return (
     <section className="my-responsive">
-      <div className="ui-container mb-8">
-        <SectionEyebrow label="A Few Highlights" isInCenter={true} />
-
-        <h3 className="text-center text-4xl font-semibold sm:text-6xl">OVC</h3>
-      </div>
+      <SectionHeading
+        className="ui-container"
+        eyebrow="A Few Highlights"
+        isInCenter
+      >
+        OVC
+      </SectionHeading>
 
       <div className="relative">
         <div ref={emblaRef} className="overflow-hidden">
