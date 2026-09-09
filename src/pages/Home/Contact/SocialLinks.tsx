@@ -4,15 +4,15 @@ import { RiInstagramFill } from "react-icons/ri";
 const socialLinks = [
   {
     icon: FaFacebookF,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/adency.co",
   },
   {
     icon: RiInstagramFill,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/adency.co",
   },
   {
     icon: FaLinkedinIn,
-    link: "https://linkedin.com",
+    link: "https://bd.linkedin.com/company/adency-ltd",
   },
 ];
 
