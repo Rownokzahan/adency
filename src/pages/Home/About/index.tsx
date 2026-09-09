@@ -10,16 +10,16 @@ const About = () => {
           <div>
             <SectionEyebrow label="Who We Are" color="light" />
 
-            <h2 className="text-paper text-4xl font-semibold">
+            <h3 className="text-paper text-3xl sm:text-5xl font-semibold">
               Introducing <span className="text-primary">Adency</span>
-            </h2>
+            </h3>
           </div>
 
           <div className="flex-1 min-h-0 overflow-hidden">
             <img
               src={AboutImage}
               alt=""
-              className="size-full rounded-lg object-cover object-left"
+              className="max-w-[min(350px,100%)] lg:max-w-full mx-auto size-full  rounded-lg object-cover object-left"
             />
           </div>
         </div>
