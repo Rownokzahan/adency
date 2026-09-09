@@ -8,14 +8,13 @@ const Photography = () => {
     {
       loop: true,
       align: "start",
-      watchDrag: false,
     },
     [
       AutoScroll({
         playOnInit: true,
         speed: 1,
+        stopOnMouseEnter: true,
         stopOnInteraction: false,
-        stopOnMouseEnter: false,
       }),
     ],
   );
