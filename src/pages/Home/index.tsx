@@ -13,14 +13,11 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      {/* <Branding /> */}
       <Services />
       <Photography />
-      {/* <MotionGraphics /> */}
       <Reels />
       <PrintPackaging />
       <OVC />
-      {/* <Campains /> */}
 
       <About />
       <LifeAtAdency />
