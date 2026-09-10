@@ -20,7 +20,7 @@ const Photography = () => {
   );
 
   return (
-    <section id="photography-section" className="my-responsive">
+    <section id="photography-section" className="my-responsive scroll-mt-32 sm:scroll-mt-38">
       <SectionHeading
         className="ui-container"
         eyebrow="Through the Lens"
