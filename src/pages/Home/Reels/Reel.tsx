@@ -43,7 +43,7 @@ const Reel = ({ src }: ReelProps) => {
           type="button"
           onClick={handlePlayPause}
           className={clsx(
-            "size-14 rounded-full bg-black/20",
+            "size-14 rounded-full bg-black/50",
             "absolute top-1/2 left-1/2 -translate-1/2",
           )}
         >
