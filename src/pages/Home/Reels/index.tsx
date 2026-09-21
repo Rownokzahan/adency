@@ -1,15 +1,17 @@
 import useEmblaCarousel from "embla-carousel-react";
 import CarouselArrowButtons from "../../../components/ui/CarouselArrowButtons";
-
 import Reel from "./Reel";
 import { reels } from "./reels";
 import SectionHeading from "../../../components/ui/SectionHeading";
+import { useState } from "react";
 
 const Reels = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
   });
+
+  const [activeReel, setActiveReel] = useState<number | null>(null);
 
   return (
     <section className="my-responsive">
@@ -29,7 +31,12 @@ const Reels = () => {
                 key={index}
                 className="min-w-0 pl-2 flex-[0_0_78%] md:flex-[0_0_32%] lg:flex-[0_0_25%] xl:flex-[0_0_18%]"
               >
-                <Reel src={reel} />
+                <Reel
+                  src={reel}
+                  isPlaying={activeReel === index}
+                  onPlay={() => setActiveReel(index)}
+                  onPause={() => setActiveReel(null)}
+                />
               </div>
             ))}
           </div>

@@ -1,24 +1,44 @@
 import clsx from "clsx";
-import { useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { RiTriangleFill } from "react-icons/ri";
 
 interface ReelProps {
   src: string;
+  isPlaying: boolean;
+  onPlay: () => void;
+  onPause: () => void;
 }
 
-const Reel = ({ src }: ReelProps) => {
+const Reel = ({ src, isPlaying, onPlay, onPause }: ReelProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    if (isPlaying) {
+      video.play().catch(console.error);
+    } else {
+      video.pause();
+    }
+  }, [isPlaying]);
 
   const handlePlayPause = () => {
-    if (!videoRef.current) return;
-
-    if (videoRef.current.paused) {
-      videoRef.current.play();
-      setIsPlaying(true);
+    if (isPlaying) {
+      onPause();
     } else {
-      videoRef.current.pause();
-      setIsPlaying(false);
+      onPlay();
+    }
+  };
+
+  const handleEnded = () => {
+    onPause();
+
+    const video = videoRef.current;
+
+    if (video) {
+      video.currentTime = 0;
     }
   };
 
@@ -29,12 +49,7 @@ const Reel = ({ src }: ReelProps) => {
         src={src}
         playsInline
         onClick={handlePlayPause}
-        onEnded={() => {
-          setIsPlaying(false);
-          if (videoRef.current) {
-            videoRef.current.currentTime = 0;
-          }
-        }}
+        onEnded={handleEnded}
         className="size-full cursor-pointer object-cover"
       />
 
