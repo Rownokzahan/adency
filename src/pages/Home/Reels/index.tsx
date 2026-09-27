@@ -8,7 +8,7 @@ import { useState } from "react";
 const Reels = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
-    align: "start",
+    align: "center",
   });
 
   const [activeReel, setActiveReel] = useState<number | null>(null);
