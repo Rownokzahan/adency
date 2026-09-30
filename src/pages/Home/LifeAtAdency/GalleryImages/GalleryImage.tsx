@@ -7,7 +7,7 @@ interface GalleryImageProps {
 
 const GalleryImage = ({ src, className }: GalleryImageProps) => {
   return (
-    <div className={clsx("overflow-hidden relative group", className)}>
+    <div className={clsx("size-full overflow-hidden relative group", className)}>
       <img
         src={src}
         alt=""

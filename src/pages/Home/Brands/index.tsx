@@ -2,6 +2,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { brands } from "./brands";
 import CarouselDots from "../../../components/ui/CarouselDots";
 import SectionHeading from "../../../components/ui/SectionHeading";
+import Reveal from "../../../components/ui/Reveal";
 
 const BRANDS_PER_SLIDE = 12;
 
@@ -34,16 +35,18 @@ const Brands = () => {
           <div className="flex">
             {slides.map((slide, index) => (
               <div key={index} className="min-w-0 flex-[0_0_100%]">
-                <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-[repeat(4,200px)] justify-center gap-y-4 sm:gap-4">
-                  {slide.map(({ image, alt }) => (
-                    <img
-                      key={alt}
-                      src={image}
-                      alt={alt}
-                      className="w-full aspect-9/6 object-cover"
-                    />
-                  ))}
-                </div>
+                <Reveal>
+                  <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-[repeat(4,200px)] justify-center gap-y-4 sm:gap-4">
+                    {slide.map(({ image, alt }) => (
+                      <img
+                        key={alt}
+                        src={image}
+                        alt={alt}
+                        className="w-full aspect-9/6 object-cover"
+                      />
+                    ))}
+                  </div>
+                </Reveal>
               </div>
             ))}
           </div>

@@ -84,15 +84,13 @@ body {
 }
 
 @utility mt-responsive {
-  @apply mt-16 lg:mt-18;
+  @apply mt-20 lg:mt-28;
 }
 
 @utility mb-responsive {
-  @apply mb-16 lg:mb-18;
+  @apply mb-20 lg:mb-28;
 }
 
 @utility my-responsive {
   @apply mt-responsive mb-responsive;
 }
-
-

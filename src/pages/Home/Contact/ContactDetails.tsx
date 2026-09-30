@@ -1,4 +1,5 @@
 import { FiClock, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import Reveal from "../../../components/ui/Reveal";
 
 const contactDetails = [
   {
@@ -30,11 +31,11 @@ const contactDetails = [
 
 const ContactDetails = () => {
   return (
-    <div className="divide-y divide-paper/20">
-      {contactDetails.map(({ icon: Icon, label, value }) => {
-        return (
-          <div key={label}>
-            <div className="py-6 flex gap-4">
+    <Reveal>
+      <div className="divide-y divide-paper/20">
+        {contactDetails.map(({ icon: Icon, label, value }) => {
+          return (
+            <div key={label} className="py-6 flex gap-4">
               <div className="flex-none size-10 rounded-lg bg-primary/10 text-primary grid place-items-center">
                 <Icon size={18} />
               </div>
@@ -44,10 +45,10 @@ const ContactDetails = () => {
                 <p className="text-sm text-paper">{value}</p>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </Reveal>
   );
 };
 
