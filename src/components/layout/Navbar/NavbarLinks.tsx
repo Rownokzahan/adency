@@ -1,55 +1,35 @@
-import { Link } from "react-router";
 import { scrollToSection } from "../../../utils/scrollToSection";
 
 interface NavbarLinksProps {
   className: string;
-  onNavigate?: () => void;
+  closeMenu?: () => void;
 }
 
-const NavbarLinks = ({ className, onNavigate }: NavbarLinksProps) => {
-  const handleSectionClick = (sectionId: string) => {
+const links = [
+  { label: "Home", sectionId: "hero-section" },
+  { label: "Works", sectionId: "photography-section" },
+  { label: "About", sectionId: "about-section" },
+  { label: "Contact", sectionId: "contact-section" },
+];
+
+const NavbarLinks = ({ className, closeMenu }: NavbarLinksProps) => {
+  const navigateToSection = (sectionId: string) => {
+    closeMenu?.();
     scrollToSection(sectionId);
-    onNavigate?.();
   };
 
   return (
     <ul className={className}>
-      <li>
-        <Link
-          to="/"
-          onClick={onNavigate}
-          className="hover:text-secondary duration-75"
-        >
-          Home
-        </Link>
-      </li>
-
-      <li>
-        <button
-          onClick={() => handleSectionClick("photography-section")}
-          className="hover:text-secondary duration-75"
-        >
-          Works
-        </button>
-      </li>
-
-      <li>
-        <button
-          onClick={() => handleSectionClick("about-section")}
-          className="hover:text-secondary duration-75"
-        >
-          About
-        </button>
-      </li>
-
-      <li>
-        <button
-          onClick={() => handleSectionClick("contact-section")}
-          className="hover:text-secondary duration-75"
-        >
-          Contact
-        </button>
-      </li>
+      {links.map(({ label, sectionId }) => (
+        <li key={sectionId}>
+          <button
+            onClick={() => navigateToSection(sectionId)}
+            className="duration-75 hover:text-secondary"
+          >
+            {label}
+          </button>
+        </li>
+      ))}
     </ul>
   );
 };

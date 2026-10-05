@@ -16,7 +16,9 @@ const Navbar = () => {
       <nav className="h-18 sm:h-22">
         <div className="fixed z-50 w-full h-18 sm:h-22 px-responsive border-b bg-white/85 backdrop-blur-sm bg-blend-hard-light flex items-center justify-between">
           <Logo />
+
           <NavbarLinks className="hidden sm:flex items-center gap-8 font-semibold text-sm" />
+
           <button onClick={openMenu} className="sm:hidden">
             <AiOutlineMenu size={26} className="mb-3" />
           </button>
@@ -39,7 +41,7 @@ const Navbar = () => {
 
         <NavbarLinks
           className="text-lg uppercase text-center space-y-8"
-          onNavigate={closeMenu}
+          closeMenu={closeMenu}
         />
       </div>
     </>
