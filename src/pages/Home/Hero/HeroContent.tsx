@@ -12,9 +12,9 @@ const HeroContent = () => {
       </h1>
 
       <p className="sm:text-xl text-pretty">
-        Adency is a full-service creative agency for brands that are done
-        blending in. We build the strategy, the story and the send-off —
-        branding, content and media, under one roof.
+        Adency makes brands impossible to overlook. From strategy and branding
+        to content and media, we turn sharp ideas into work that gets noticed
+        and brands that go somewhere.
       </p>
 
       <button
