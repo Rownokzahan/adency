@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 
 const Logo = () => {
   return (
-    <Link to={"/"} className="block">
+    <Link to={"/"} className="block pt-2.5">
       <img src={logo} alt="Logo" className="w-28 sm:w-32 object-contain" />
     </Link>
   );

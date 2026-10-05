@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavbarLinks className="hidden sm:flex items-center gap-8 font-semibold text-sm" />
 
           <button onClick={openMenu} className="sm:hidden">
-            <AiOutlineMenu size={26} className="mb-3" />
+            <AiOutlineMenu size={26} />
           </button>
         </div>
       </nav>
