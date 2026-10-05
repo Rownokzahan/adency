@@ -9,7 +9,7 @@ const Contact = () => {
       id="contact-section"
       className="scroll-mt-18 sm:scroll-mt-22 lg:ui-container lg:my-responsive"
     >
-      <div className="px-responsive py-20 lg:px-12 lg:rounded-3xl bg-ink grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-16">
+      <div className="px-responsive py-20 lg:px-12 lg:rounded-3xl bg-ink grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-16 overflow-hidden">
         <div className="h-full flex flex-col">
           <SectionHeading eyebrow="Get in Touch" color="light">
             Connect with us
